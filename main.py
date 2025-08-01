@@ -52,7 +52,7 @@ def handle_forwarded_message(update, context):
         if original_text:
             try:
                 # Menerjemahkan ke bahasa Indonesia (deteksi bahasa otomatis)
-                translated_text = translator.translate(original_text, dest=\'id\').text
+                translated_text = translator.translate(original_text, dest='id').text
                 
                 # Format pesan yang akan dikirim
                 message_template = f"📰 Pesan Diteruskan dari {forwarded_from_chat_name}:\n\n🔤 Asli:\n{{original}}\n\n🇮🇩 Terjemahan (ID):\n{{translated}}"
