@@ -103,7 +103,7 @@ def handle_forwarded_message(update, context):
 def main():
     """Menjalankan bot."""
     # Token bot Telegram dari environment variable atau hardcode
-    TOKEN = os.getenv(\'TELEGRAM_BOT_TOKEN\', \'7235261978:AAFaS8Dg7IDDmSc8JI7IAqX2bPJywLRl3xU\')
+    TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "7235261978:AAFaS8Dg7IDDmSc8JI7IAqX2bPJywLRl3xU")
     
     # Membuat updater dan dispatcher
     updater = Updater(TOKEN, use_context=True)
@@ -120,8 +120,9 @@ def main():
     # Jalankan bot sampai dihentikan
     updater.idle()
 
-if __name__ == \'__main__\':
+if __name__ == '__main__':
     main()
 
 
 
+live
